@@ -7,7 +7,6 @@
  */
 
 #include "Book.hpp" 
-#include <string>
 
 class Contact{
     // Fields

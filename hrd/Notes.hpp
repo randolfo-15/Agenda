@@ -14,7 +14,6 @@
 class Notes{
     std::string text = "";
     std::vector<std::string> tag;
-    int id = 0;
 
     public:
         // Build
@@ -27,13 +26,10 @@ class Notes{
         // =======
         void note(std::string);
         void tags(std::initializer_list<std::string>);
-        void page(int);
 
         // Getting
         // =======
         std::string note();
-        std::initializer_list<std::string> tags();
-        int page();
-
+        bool exist_tag(std::string);
 };
 

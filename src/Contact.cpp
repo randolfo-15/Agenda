@@ -2,13 +2,11 @@
  * =========
  * \author : Randolfo A Goncalves
  * \date   : 24-08-24
- * \file   : Contact.hpp
+ * \file   : Contact.cpp
  * \since  : 1.0
  */
 
 #include "../hrd/Contact.hpp"
-#include <sstream>
-#include <string>
 
 using str=std::string;
 
