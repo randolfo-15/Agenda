@@ -1,7 +1,0 @@
-add_test([=[Contacts.sample_test]=]  /home/randolfo/dev/Agenda/build/test/test_contact [==[--gtest_filter=Contacts.sample_test]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[Contacts.sample_test]=]  PROPERTIES WORKING_DIRECTORY /home/randolfo/dev/Agenda/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[Contact.first_name]=]  /home/randolfo/dev/Agenda/build/test/test_contact [==[--gtest_filter=Contact.first_name]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[Contact.first_name]=]  PROPERTIES WORKING_DIRECTORY /home/randolfo/dev/Agenda/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[Contact.last_name]=]  /home/randolfo/dev/Agenda/build/test/test_contact [==[--gtest_filter=Contact.last_name]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[Contact.last_name]=]  PROPERTIES WORKING_DIRECTORY /home/randolfo/dev/Agenda/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  test_contact_TESTS Contacts.sample_test Contact.first_name Contact.last_name)
