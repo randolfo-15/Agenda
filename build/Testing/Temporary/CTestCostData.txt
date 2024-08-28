@@ -1,0 +1,5 @@
+Contacts.sample_test 4 0.0112699
+Contact.first_name 4 0.0125546
+Contact.last_name 4 0.0111993
+Contact 4 0.0109287
+---

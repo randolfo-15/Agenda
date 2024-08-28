@@ -7,27 +7,22 @@
  */
 
 #include "../hrd/Book.hpp"
-#include <algorithm>
-
-using std::for_each;
-
-using List=std::initializer_list<Notes>;
-using vec=std::vector<Notes>;
 
 void Book::add(Note note){ book.push_back(note); }
 
-void Book::add(List notes){
-    for_each(notes.begin(), notes.end(), [this](Notes note){ add(note); } );
-}
-
 void Book::edit(Note note){
-    for_each(book.begin(), book.end(),[note](Notes& old){ if(old.page()==note.page())old=note; });
+    int i = 0;
+    if( (i=exist(note.page()))>=0) book[i]=note;
 }
 
-void Book::remove(Note note){
-    for_each(book.begin(),book.end(),[this,note](Notes del){ if(del.page()==note.page()) book.erase(note); });
+void Book::erase(Note note){
+    int i = 0;
+    if( (i=exist(note.page()))>=0) book.erase(book.begin()+i);
 }
 
-void Book::remove(List notes){
-    for_each(notes.begin(), notes.end(),[this](Notes note){ remove(note); });
+int Book::exist(int number){
+    int size = book.size();
+    for(int i=0;i<size;i++) if(book[i].page()==number) return i;
+    
+    return -1;
 }

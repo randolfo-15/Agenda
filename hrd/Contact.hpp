@@ -1,3 +1,4 @@
+#pragma once
 /*! Contact
  * =========
  * \author : Randolfo A Goncalves
@@ -21,7 +22,8 @@ class Contact{
     public:
         // Build
         // =====
-        Contact();                                
+        Contact();     
+        Contact(std::string);                           
         Contact(std::string full_name, std::string phone);  
   
         // Setting

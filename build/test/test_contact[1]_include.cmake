@@ -1,0 +1,5 @@
+if(EXISTS "/home/randolfo/dev/Agenda/build/test/test_contact[1]_tests.cmake")
+  include("/home/randolfo/dev/Agenda/build/test/test_contact[1]_tests.cmake")
+else()
+  add_test(test_contact_NOT_BUILT test_contact_NOT_BUILT)
+endif()

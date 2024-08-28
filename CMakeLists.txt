@@ -1,4 +1,4 @@
-cmake_minimum_requied(version 3.10)
+cmake_minimum_required(VERSION 3.27)
 
 project(Agenda
 
@@ -8,6 +8,14 @@ project(Agenda
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# ----------------- Source -----------------
+include_directories(hrd)
+add_subdirectory(src)
+
+# ------------------ Test ------------------ 
+enable_testing()
+add_subdirectory(test)
 
 
 

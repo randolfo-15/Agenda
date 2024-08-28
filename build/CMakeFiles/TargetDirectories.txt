@@ -1,0 +1,13 @@
+/home/randolfo/dev/Agenda/build/CMakeFiles/test.dir
+/home/randolfo/dev/Agenda/build/CMakeFiles/edit_cache.dir
+/home/randolfo/dev/Agenda/build/CMakeFiles/rebuild_cache.dir
+/home/randolfo/dev/Agenda/build/src/CMakeFiles/Notes.dir
+/home/randolfo/dev/Agenda/build/src/CMakeFiles/Book.dir
+/home/randolfo/dev/Agenda/build/src/CMakeFiles/Contact.dir
+/home/randolfo/dev/Agenda/build/src/CMakeFiles/test.dir
+/home/randolfo/dev/Agenda/build/src/CMakeFiles/edit_cache.dir
+/home/randolfo/dev/Agenda/build/src/CMakeFiles/rebuild_cache.dir
+/home/randolfo/dev/Agenda/build/test/CMakeFiles/test_contact.dir
+/home/randolfo/dev/Agenda/build/test/CMakeFiles/test.dir
+/home/randolfo/dev/Agenda/build/test/CMakeFiles/edit_cache.dir
+/home/randolfo/dev/Agenda/build/test/CMakeFiles/rebuild_cache.dir

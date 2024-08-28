@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/randolfo/dev/Agenda/build/src",
+  "command": "/usr/bin/c++  -I/home/randolfo/dev/Agenda/hrd -g -std=gnu++17 -o CMakeFiles/Notes.dir/Notas.cpp.o -c /home/randolfo/dev/Agenda/src/Notas.cpp",
+  "file": "/home/randolfo/dev/Agenda/src/Notas.cpp",
+  "output": "src/CMakeFiles/Notes.dir/Notas.cpp.o"
+},
+{
+  "directory": "/home/randolfo/dev/Agenda/build/src",
+  "command": "/usr/bin/c++  -I/home/randolfo/dev/Agenda/hrd -g -std=gnu++17 -o CMakeFiles/Book.dir/Book.cpp.o -c /home/randolfo/dev/Agenda/src/Book.cpp",
+  "file": "/home/randolfo/dev/Agenda/src/Book.cpp",
+  "output": "src/CMakeFiles/Book.dir/Book.cpp.o"
+},
+{
+  "directory": "/home/randolfo/dev/Agenda/build/src",
+  "command": "/usr/bin/c++  -I/home/randolfo/dev/Agenda/hrd -g -std=gnu++17 -o CMakeFiles/Contact.dir/Contact.cpp.o -c /home/randolfo/dev/Agenda/src/Contact.cpp",
+  "file": "/home/randolfo/dev/Agenda/src/Contact.cpp",
+  "output": "src/CMakeFiles/Contact.dir/Contact.cpp.o"
+},
+{
+  "directory": "/home/randolfo/dev/Agenda/build/test",
+  "command": "/usr/bin/c++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/randolfo/dev/Agenda/hrd -g -std=gnu++17 -o CMakeFiles/test_contact.dir/test_contact.cpp.o -c /home/randolfo/dev/Agenda/test/test_contact.cpp",
+  "file": "/home/randolfo/dev/Agenda/test/test_contact.cpp",
+  "output": "test/CMakeFiles/test_contact.dir/test_contact.cpp.o"
+}
+]

@@ -14,6 +14,11 @@ using str=std::string;
 // =====
 Contact::Contact(){}
 
+Contact::Contact(str full_name):
+    fname(my_first_name(full_name)),
+    lname(my_last_name(full_name))
+    {}
+
 Contact::Contact(str full_name,str number):
     fname(my_first_name(full_name)),
     lname(my_last_name(full_name)),
@@ -38,4 +43,4 @@ Book Contact::notes(){ return book; }
 // Tools
 // =====
 str Contact::my_first_name(str name){ return name.substr(0,name.find(" "));}
-str Contact::my_last_name(str name){ return name.substr(name.find("")+1); }
+str Contact::my_last_name(str name){ return name.substr(name.find(" ")+1); }

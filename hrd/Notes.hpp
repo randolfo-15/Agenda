@@ -1,3 +1,4 @@
+#pragma once
 /*!
  *  Notas
  * =======
@@ -11,9 +12,14 @@
 #include <string>
 #include <vector>
 
+class Book;
 class Notes{
+    friend Book;
+
     std::string text = "";
     std::vector<std::string> tag;
+    static int id;
+    int number;
 
     public:
         // Build
@@ -25,11 +31,18 @@ class Notes{
         // Setting
         // =======
         void note(std::string);
-        void tags(std::initializer_list<std::string>);
-
+    
         // Getting
         // =======
         std::string note();
-        bool exist_tag(std::string);
+        
+        // Tags tools
+        // =====
+        void tag_add(std::string);
+        int  tag_exist(std::string);
+        void tag_erase(std::string);
+
+    private:
+        int page();
 };
 
