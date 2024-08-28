@@ -1,31 +1,15 @@
-add_library(Notes OBJECT Notas.cpp)
+add_library(Contact STATIC )
 
-add_library(Book OBJECT Book.cpp)
+target_sources(Contact
+    PRIVATE
+        Notas.cpp 
+        Book.cpp 
+        Contact.cpp 
+)
 
-add_library(Contact OBJECT Contact.cpp)
-
-
-target_link_libraries(Book PRIVATE Notes)
-
-target_link_libraries(Contact PRIVATE Book)
- 
-#target_sources(mosaicos
-#    PRIVATE
-#        str.cpp
-#        colour.cpp
-#        effect.cpp
-#    PUBLIC FILE_SET HEADERS 
-#        FILES 
-#            gd_rag.hpp
-#                        
-#)
-
-
-
-target_include_directories(Contact PUBLIC ${CMAKE_SOURCE_DIR}/hrd)
-
-target_include_directories(Book PUBLIC ${CMAKE_SOURCE_DIR}/hrd)
-
-target_include_directories(Notes PUBLIC ${CMAKE_SOURCE_DIR}/hrd)
-
+target_include_directories(Contact 
+    PUBLIC 
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    # $<INSTALL_INTERFACE:include>
+)
 

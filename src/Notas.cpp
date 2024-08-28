@@ -1,5 +1,5 @@
-#include "../hrd/Notes.hpp"
-#include <initializer_list>
+#include <Notes.hpp>
+
 using str=std::string;
 using List=std::initializer_list<str>;
 

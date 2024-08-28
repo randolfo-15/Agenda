@@ -28,8 +28,7 @@ class Contact{
   
         // Setting
         // =======
-        void first_name(std::string);  
-        void last_name(std::string);  
+        void full_name(std::string);
         void telephone(std::string); 
         void e_mail(std::string);   
          

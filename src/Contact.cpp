@@ -6,7 +6,8 @@
  * \since  : 1.0
  */
 
-#include "../hrd/Contact.hpp"
+#include <Contact.hpp>
+
 
 using str=std::string;
 
@@ -14,22 +15,19 @@ using str=std::string;
 // =====
 Contact::Contact(){}
 
-Contact::Contact(str full_name):
-    fname(my_first_name(full_name)),
-    lname(my_last_name(full_name))
-    {}
+Contact::Contact(str name){ full_name(name); }
 
-Contact::Contact(str full_name,str number):
-    fname(my_first_name(full_name)),
-    lname(my_last_name(full_name)),
-    phone(number)
-{}
+Contact::Contact(str name,str number):phone(number){ full_name(name); }
 
 // Setting
 // =======
-void Contact::first_name(str name){ fname=name; }  
-void Contact::last_name(str name){ lname=name; }  
+void Contact::full_name(str name){ 
+    fname=my_first_name(name);
+    lname=my_last_name(name);
+}
+
 void Contact::telephone(str number){ phone=number; } 
+
 void Contact::e_mail(str name){ email=name; }
 
 // Getting
@@ -43,4 +41,11 @@ Book Contact::notes(){ return book; }
 // Tools
 // =====
 str Contact::my_first_name(str name){ return name.substr(0,name.find(" "));}
-str Contact::my_last_name(str name){ return name.substr(name.find(" ")+1); }
+
+str Contact::my_last_name(str name){ 
+    std::size_t i=name.find(" ");
+    if(i==str::npos) return "";
+    else if(name.at(0)==' ') return "";
+    return name.substr(i+1); 
+}
+

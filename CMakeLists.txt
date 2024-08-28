@@ -10,12 +10,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # ----------------- Source -----------------
-include_directories(hrd)
-add_subdirectory(src)
+include_directories("include")
+add_subdirectory("src")
 
 # ------------------ Test ------------------ 
 enable_testing()
 add_subdirectory(test)
-
 
 

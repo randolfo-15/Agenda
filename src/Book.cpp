@@ -6,7 +6,7 @@
  * \since  : 1.0
  */
 
-#include "../hrd/Book.hpp"
+#include <Book.hpp>
 
 void Book::add(Note note){ book.push_back(note); }
 
