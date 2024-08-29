@@ -1,4 +1,4 @@
-add_library(Contact STATIC )
+add_library(Contact OBJECT )
 
 target_sources(Contact
     PRIVATE
@@ -9,7 +9,7 @@ target_sources(Contact
 
 target_include_directories(Contact 
     PUBLIC 
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/datas>
     # $<INSTALL_INTERFACE:include>
 )
 

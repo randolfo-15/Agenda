@@ -8,13 +8,13 @@
  */
 
 #include "Book.hpp" 
+#include <string>
 
 class Contact{
     // Fields
     // ======
     std::string 
-        fname = "", //> Primeiro nome
-        lname = "", //> Sobrenome
+        nm    = "", //> Nome
         phone = "", //> Telefone
         email = ""; //> E-mail
         Book book;  //> Bloco de notas
@@ -24,25 +24,20 @@ class Contact{
         // =====
         Contact();     
         Contact(std::string);                           
-        Contact(std::string full_name, std::string phone);  
+        Contact(std::string name, std::string phone);  
   
         // Setting
         // =======
-        void full_name(std::string);
+        void name(std::string);
         void telephone(std::string); 
         void e_mail(std::string);   
          
         // Getting
         // =======
+        std::string name();
         std::string first_name(); 
         std::string last_name();  
         std::string telephone();  
         std::string e_mail();
         Book notes();
-   
-    private:
-        // Tools
-        // =====
-        std::string my_first_name(std::string);
-        std::string my_last_name(std::string);
 };

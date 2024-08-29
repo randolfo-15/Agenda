@@ -4,7 +4,7 @@ CREATE SCHEMA IF NOT EXISTS contact;
 SET SCHEMA 'contact';
 
 -- Address
-CREATE TABLE address(
+CREATE TABLE contact.address(
     id           SERIAL PRIMARY KEY,
     home         INTEGER NOT NULL,
     street       VARCHAR(60) NOT NULL,
@@ -19,10 +19,9 @@ INSERT INTO address (home, street, neighborhood, state, country) VALUES (431, 'D
 INSERT INTO address (home, street, neighborhood, state, country) VALUES (551, 'Ana Costa', 'Casfa', 'SH', 'Brásik');
 
 -- Contact
-CREATE TABLE contact(
+CREATE TABLE contact.contact(
     id         SERIAL PRIMARY KEY,
-    first_name VARCHAR(20),
-    last_name  VARCHAR(60),
+    name VARCHAR(60),
     telephone  VARCHAR(16) UNIQUE,
     email      VARCHAR(60) UNIQUE,
     address    INTEGER,
@@ -33,12 +32,12 @@ CREATE TABLE contact(
 );
 
 -- ------------------------------------------------
-INSERT INTO contact (first_name, last_name, telephone, email, address) VALUES ('Randolfo', 'A Goncalves', '(31) 99239-0399', 'rag@gmail.com', 1);
-INSERT INTO contact (first_name, last_name, telephone, email, address) VALUES ('Pedro', 'Carlos', '(31) 99939-3377', 'pedro@gmail.com', 2);
-INSERT INTO contact (first_name, last_name, telephone, email, address) VALUES ('Raul', 'Augusto', '(31) 99559-7393', 'raul@gmail.com', 1);
+INSERT INTO contact (name, telephone, email, address) VALUES ('Randolfo Goncalves', '(31) 99239-0399', 'rag@gmail.com', 1);
+INSERT INTO contact (name, telephone, email, address) VALUES ('Pedro Carlos', '(31) 99939-3377', 'pedro@gmail.com', 2);
+INSERT INTO contact (name, telephone, email, address) VALUES ('Raul Augusto', '(31) 99559-7393', 'raul@gmail.com', 1);
 
 -- Notes
-CREATE TABLE notes(
+CREATE TABLE contact.notes(
     id    SERIAL PRIMARY KEY,
     body  TEXT,
     tag   TEXT,
