@@ -10,19 +10,10 @@
 
 void Book::add(Note note){ book.push_back(note); }
 
-void Book::edit(Note note){
-    int i = 0;
-    if( (i=exist(note.page()))>=0) book[i]=note;
-}
+void Book::edit(int i,Note note){ book[i]=note; }
 
-void Book::erase(Note note){
-    int i = 0;
-    if( (i=exist(note.page()))>=0) book.erase(book.begin()+i);
-}
+void Book::erase(int i){ book.erase(book.begin()+i); }
 
-int Book::exist(int number){
-    int size = book.size();
-    for(int i=0;i<size;i++) if(book[i].page()==number) return i;
-    
-    return -1;
-}
+int Book::size(){ return book.size(); }
+
+Note Book::operator[](int i){ return book[i]; }

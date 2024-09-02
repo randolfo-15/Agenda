@@ -11,7 +11,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # ----------------- Source -----------------
 include_directories("include")
-add_subdirectory("src/datas")
+add_subdirectory("src")
+
 
 # ------------------ Test ------------------ 
 enable_testing()

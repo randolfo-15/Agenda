@@ -12,37 +12,59 @@
 #include <string>
 #include <vector>
 
-class Book;
 class Notes{
-    friend Book;
 
     std::string text = "";
     std::vector<std::string> tag;
-    static int id;
-    int number;
-
+    
     public:
         // Build
         // =====
         Notes();
-        Notes(std::string reminder); 
+        Notes(std::string reminder);
+        Notes(std::initializer_list<std::string> tags); 
         Notes(std::string reminder,std::initializer_list<std::string> tags);
 
         // Setting
         // =======
-        void note(std::string);
-    
+        void content(std::string);
+        
         // Getting
         // =======
-        std::string note();
+        std::string content();
         
         // Tags tools
-        // =====
-        void tag_add(std::string);
-        int  tag_exist(std::string);
-        void tag_erase(std::string);
+        // ==========
 
-    private:
-        int page();
+        /*! Adiciona uma nova tag
+            =====================
+            \param  std::string  (nome)
+            \return void
+        
+        */
+        void tag_add(std::string);
+        
+        /*! Checar se tag existe
+            ====================
+            Função que retorna um valor positivo caso exista 
+            a tag, e negativo, caso não exista. O valor positivo
+            corresponde a posição de indexe da tag.
+            _______________________________________________________
+            \param  std::string (nova tag)
+            \return int         (posição)
+        
+        */ 
+        int  tag_exist(std::string);
+        
+        /*! Remover tag
+            ===========
+            Caso a tag exista ela sera removida usando como cri
+            tério de seleção o nome atribuído a mesma.
+            _______________________________________________________
+            \param  std::string (nome)
+            \return bool        (status)
+        
+        */
+        bool tag_erase(std::string);
 };
 

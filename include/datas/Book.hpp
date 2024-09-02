@@ -13,18 +13,17 @@ using Note=Notes;
 
 class Book{
 
-    int number = 0;
-
     std::vector<Notes> book;
 
     public:
-        void add(Note);    //> Adicione uma nota
+        void add(Note);       //> Adicione uma nota
     
-        void edit(Note);   //> Editar nota
+        void edit(int,Note);  //> Editar nota
     
-        void erase(Note); //> Remova uma nota
-    
-    private:
-        int exist(int page); //> Checa se a mota existe, e retorna sua posição caso exista, caso contraio -1
+        void erase(int);      //> Remova uma nota
 
+        int size();           //> Nº de notas
+    
+        Note operator[](int);
 };
+

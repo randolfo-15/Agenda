@@ -7,8 +7,7 @@
  * \since  : 1.0
  */
 
-#include "Book.hpp" 
-#include <string>
+#include "Book.hpp"
 
 class Contact{
     // Fields
