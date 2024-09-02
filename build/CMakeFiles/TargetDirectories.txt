@@ -1,0 +1,13 @@
+/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles/test.dir
+/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles/rebuild_cache.dir
+/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/Contact.dir
+/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/Bank.dir
+/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/test.dir
+/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/rebuild_cache.dir
+/data/data/com.termux/files/home/dev/Agenda/build/test/CMakeFiles/test_datas.dir
+/data/data/com.termux/files/home/dev/Agenda/build/test/CMakeFiles/test_bank.dir
+/data/data/com.termux/files/home/dev/Agenda/build/test/CMakeFiles/test.dir
+/data/data/com.termux/files/home/dev/Agenda/build/test/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/dev/Agenda/build/test/CMakeFiles/rebuild_cache.dir

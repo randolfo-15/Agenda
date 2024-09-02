@@ -30,11 +30,15 @@ void Contact::telephone(str number){ phone=number; }
 
 void Contact::e_mail(str name){ email=name; }
 
+void Contact::key(int id){ this->id=id; }
+
 // Getting
 // =======
 str Contact::name(){ return nm; }
 
 str Contact::first_name(){  return nm.substr(0,nm.find(" ")); } 
+
+int Contact::key(){ return id; }
 
 str Contact::last_name(){ 
     std::size_t i=nm.find(" ");

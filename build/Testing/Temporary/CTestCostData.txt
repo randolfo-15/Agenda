@@ -1,0 +1,16 @@
+Contacts.email 1 0.0109866
+Contacts.telephone 1 0.00835562
+Contacts.first_name 1 0.00839208
+Contacts.no_surname 1 0.00737266
+Contacts.last_name 1 0.00771047
+Contacts.full_name 1 0.00743333
+Notes.compare 1 0.00765016
+Notes.edit 1 0.00745365
+Notes.find 1 0.00788109
+Book.size 1 0.00750807
+Book.erase_size 1 0.00781349
+Book.edit 1 0.00932484
+Bank.connect 1 0.0278663
+Bank 1 0.0244866
+Datas 1 0.00834542
+---

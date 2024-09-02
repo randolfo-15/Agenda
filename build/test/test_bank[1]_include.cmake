@@ -1,0 +1,5 @@
+if(EXISTS "/data/data/com.termux/files/home/dev/Agenda/build/test/test_bank[1]_tests.cmake")
+  include("/data/data/com.termux/files/home/dev/Agenda/build/test/test_bank[1]_tests.cmake")
+else()
+  add_test(test_bank_NOT_BUILT test_bank_NOT_BUILT)
+endif()

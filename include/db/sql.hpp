@@ -15,9 +15,9 @@ namespace  db {
 
         //  Conexão
         // =========
-        NAME = "agenda",       
+    NAME = "agenda",       
         USER = "agenda",
-        PASS = "agenda",
+PASS = "agenda",
         PORT = "5432",
         HOST = "127.0.0.1",
 
@@ -33,4 +33,5 @@ namespace  db {
         TB_ADDRESS="address",
         TB_CONTACT="contact",
         TB_NOTES="notes";
- }
+
+ };

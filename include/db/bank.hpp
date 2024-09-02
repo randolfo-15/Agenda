@@ -10,9 +10,12 @@
 
 #include <libpq-fe.h>
 #include "sql.hpp"
+#include "arq.hpp"
 
 class Bank{
     PGconn* conn = nullptr;
+    
+    
 
     public:
     /*! Conectar 
@@ -46,5 +49,9 @@ class Bank{
        =======
 
     */
-        bool query();
+        bool add(Archivable*);
+        bool up(Archivable*);
+        bool find(Archivable*);
+        bool erase(Archivable*);
+     
 };

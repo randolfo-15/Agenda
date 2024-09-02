@@ -1,7 +1,9 @@
 #include <db/bank.hpp>
-#include <libpq-fe.h>
 
 using str=std::string;
+using namespace db;
+using Arc=Archivable;
+
 
 bool Bank::connect(str str_conn){
     if(conn!=nullptr) disconnect();
@@ -17,4 +19,9 @@ void Bank::disconnect(){
 str Bank::log(){
     return PQerrorMessage(conn);
 }
+
+bool Bank::add(Arc* arc){ return arc->insert(conn); } 
+bool Bank::up(Arc* arc){ return arc->insert(conn); } 
+bool Bank::find(Arc* arc){ return arc->insert(conn); } 
+bool Bank::erase(Arc* arc){ return arc->insert(conn); } 
 

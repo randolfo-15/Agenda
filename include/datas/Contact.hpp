@@ -17,6 +17,7 @@ class Contact{
         phone = "", //> Telefone
         email = ""; //> E-mail
         Book book;  //> Bloco de notas
+    int id = -1;
 
     public:
         // Build
@@ -30,7 +31,8 @@ class Contact{
         void name(std::string);
         void telephone(std::string); 
         void e_mail(std::string);   
-         
+        void key(int);
+
         // Getting
         // =======
         std::string name();
@@ -39,4 +41,5 @@ class Contact{
         std::string telephone();  
         std::string e_mail();
         Book notes();
+        int key();
 };
