@@ -41,22 +41,22 @@ cmake_force:
 # Set environment variables for the build.
 
 # The shell in which to execute make rules.
-SHELL = /data/data/com.termux/files/usr/bin/sh
+SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /data/data/com.termux/files/usr/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/dev/Agenda
+CMAKE_SOURCE_DIR = /home/randolfo/dev/Agenda
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/data/com.termux/files/home/dev/Agenda/build
+CMAKE_BINARY_DIR = /home/randolfo/dev/Agenda/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/Bank.dir/depend.make
@@ -70,20 +70,35 @@ include src/CMakeFiles/Bank.dir/progress.make
 include src/CMakeFiles/Bank.dir/flags.make
 
 src/CMakeFiles/Bank.dir/db/bank.cpp.o: src/CMakeFiles/Bank.dir/flags.make
-src/CMakeFiles/Bank.dir/db/bank.cpp.o: /data/data/com.termux/files/home/dev/Agenda/src/db/bank.cpp
+src/CMakeFiles/Bank.dir/db/bank.cpp.o: /home/randolfo/dev/Agenda/src/db/bank.cpp
 src/CMakeFiles/Bank.dir/db/bank.cpp.o: src/CMakeFiles/Bank.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Bank.dir/db/bank.cpp.o"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Bank.dir/db/bank.cpp.o -MF CMakeFiles/Bank.dir/db/bank.cpp.o.d -o CMakeFiles/Bank.dir/db/bank.cpp.o -c /data/data/com.termux/files/home/dev/Agenda/src/db/bank.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Bank.dir/db/bank.cpp.o"
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Bank.dir/db/bank.cpp.o -MF CMakeFiles/Bank.dir/db/bank.cpp.o.d -o CMakeFiles/Bank.dir/db/bank.cpp.o -c /home/randolfo/dev/Agenda/src/db/bank.cpp
 
 src/CMakeFiles/Bank.dir/db/bank.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Bank.dir/db/bank.cpp.i"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/dev/Agenda/src/db/bank.cpp > CMakeFiles/Bank.dir/db/bank.cpp.i
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/dev/Agenda/src/db/bank.cpp > CMakeFiles/Bank.dir/db/bank.cpp.i
 
 src/CMakeFiles/Bank.dir/db/bank.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Bank.dir/db/bank.cpp.s"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/dev/Agenda/src/db/bank.cpp -o CMakeFiles/Bank.dir/db/bank.cpp.s
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/dev/Agenda/src/db/bank.cpp -o CMakeFiles/Bank.dir/db/bank.cpp.s
+
+src/CMakeFiles/Bank.dir/db/arq.cpp.o: src/CMakeFiles/Bank.dir/flags.make
+src/CMakeFiles/Bank.dir/db/arq.cpp.o: /home/randolfo/dev/Agenda/src/db/arq.cpp
+src/CMakeFiles/Bank.dir/db/arq.cpp.o: src/CMakeFiles/Bank.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Bank.dir/db/arq.cpp.o"
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Bank.dir/db/arq.cpp.o -MF CMakeFiles/Bank.dir/db/arq.cpp.o.d -o CMakeFiles/Bank.dir/db/arq.cpp.o -c /home/randolfo/dev/Agenda/src/db/arq.cpp
+
+src/CMakeFiles/Bank.dir/db/arq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Bank.dir/db/arq.cpp.i"
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/dev/Agenda/src/db/arq.cpp > CMakeFiles/Bank.dir/db/arq.cpp.i
+
+src/CMakeFiles/Bank.dir/db/arq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Bank.dir/db/arq.cpp.s"
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/dev/Agenda/src/db/arq.cpp -o CMakeFiles/Bank.dir/db/arq.cpp.s
 
 Bank: src/CMakeFiles/Bank.dir/db/bank.cpp.o
+Bank: src/CMakeFiles/Bank.dir/db/arq.cpp.o
 Bank: src/CMakeFiles/Bank.dir/build.make
 .PHONY : Bank
 
@@ -92,10 +107,10 @@ src/CMakeFiles/Bank.dir/build: Bank
 .PHONY : src/CMakeFiles/Bank.dir/build
 
 src/CMakeFiles/Bank.dir/clean:
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Bank.dir/cmake_clean.cmake
+	cd /home/randolfo/dev/Agenda/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Bank.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/Bank.dir/clean
 
 src/CMakeFiles/Bank.dir/depend:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/data/com.termux/files/home/dev/Agenda /data/data/com.termux/files/home/dev/Agenda/src /data/data/com.termux/files/home/dev/Agenda/build /data/data/com.termux/files/home/dev/Agenda/build/src /data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/Bank.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/randolfo/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/randolfo/dev/Agenda /home/randolfo/dev/Agenda/src /home/randolfo/dev/Agenda/build /home/randolfo/dev/Agenda/build/src /home/randolfo/dev/Agenda/build/src/CMakeFiles/Bank.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/Bank.dir/depend
 

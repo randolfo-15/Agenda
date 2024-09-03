@@ -1,5 +1,5 @@
-if(EXISTS "/data/data/com.termux/files/home/dev/Agenda/build/test/test_datas[1]_tests.cmake")
-  include("/data/data/com.termux/files/home/dev/Agenda/build/test/test_datas[1]_tests.cmake")
+if(EXISTS "/home/randolfo/dev/Agenda/build/test/test_datas[1]_tests.cmake")
+  include("/home/randolfo/dev/Agenda/build/test/test_datas[1]_tests.cmake")
 else()
   add_test(test_datas_NOT_BUILT test_datas_NOT_BUILT)
 endif()

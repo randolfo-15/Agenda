@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/data/data/com.termux/files/home/dev/Agenda/src/datas/Book.cpp" "src/CMakeFiles/Contact.dir/datas/Book.cpp.o" "gcc" "src/CMakeFiles/Contact.dir/datas/Book.cpp.o.d"
-  "/data/data/com.termux/files/home/dev/Agenda/src/datas/Contact.cpp" "src/CMakeFiles/Contact.dir/datas/Contact.cpp.o" "gcc" "src/CMakeFiles/Contact.dir/datas/Contact.cpp.o.d"
-  "/data/data/com.termux/files/home/dev/Agenda/src/datas/Notas.cpp" "src/CMakeFiles/Contact.dir/datas/Notas.cpp.o" "gcc" "src/CMakeFiles/Contact.dir/datas/Notas.cpp.o.d"
+  "/home/randolfo/dev/Agenda/src/datas/Book.cpp" "src/CMakeFiles/Contact.dir/datas/Book.cpp.o" "gcc" "src/CMakeFiles/Contact.dir/datas/Book.cpp.o.d"
+  "/home/randolfo/dev/Agenda/src/datas/Contact.cpp" "src/CMakeFiles/Contact.dir/datas/Contact.cpp.o" "gcc" "src/CMakeFiles/Contact.dir/datas/Contact.cpp.o.d"
+  "/home/randolfo/dev/Agenda/src/datas/Notas.cpp" "src/CMakeFiles/Contact.dir/datas/Notas.cpp.o" "gcc" "src/CMakeFiles/Contact.dir/datas/Notas.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

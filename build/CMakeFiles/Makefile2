@@ -42,22 +42,22 @@ cmake_force:
 # Set environment variables for the build.
 
 # The shell in which to execute make rules.
-SHELL = /data/data/com.termux/files/usr/bin/sh
+SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /data/data/com.termux/files/usr/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/dev/Agenda
+CMAKE_SOURCE_DIR = /home/randolfo/dev/Agenda
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/data/com.termux/files/home/dev/Agenda/build
+CMAKE_BINARY_DIR = /home/randolfo/dev/Agenda/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -118,14 +118,14 @@ test/clean: test/CMakeFiles/test_bank.dir/clean
 src/CMakeFiles/Contact.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=2,3,4 "Built target Contact"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=3,4,5 "Built target Contact"
 .PHONY : src/CMakeFiles/Contact.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/Contact.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Contact.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/Contact.dir/rule
 
 # Convenience name for target.
@@ -144,14 +144,14 @@ src/CMakeFiles/Contact.dir/clean:
 src/CMakeFiles/Bank.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=1 "Built target Bank"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=1,2 "Built target Bank"
 .PHONY : src/CMakeFiles/Bank.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/Bank.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Bank.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/Bank.dir/rule
 
 # Convenience name for target.
@@ -170,14 +170,14 @@ src/CMakeFiles/Bank.dir/clean:
 test/CMakeFiles/test_datas.dir/all: src/CMakeFiles/Contact.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=7,8 "Built target test_datas"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=8,9 "Built target test_datas"
 .PHONY : test/CMakeFiles/test_datas.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_datas.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_datas.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_datas.dir/rule
 
 # Convenience name for target.
@@ -196,14 +196,14 @@ test/CMakeFiles/test_datas.dir/clean:
 test/CMakeFiles/test_bank.dir/all: src/CMakeFiles/Bank.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=5,6 "Built target test_bank"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=6,7 "Built target test_bank"
 .PHONY : test/CMakeFiles/test_bank.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_bank.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_bank.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_bank.dir/rule
 
 # Convenience name for target.

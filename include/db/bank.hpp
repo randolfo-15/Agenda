@@ -8,16 +8,15 @@
  * \since  : 1.0
 */
 
-#include <libpq-fe.h>
-#include "sql.hpp"
 #include "arq.hpp"
 
 class Bank{
     PGconn* conn = nullptr;
     
-    
-
     public:
+        Bank();
+        ~Bank();
+
     /*! Conectar 
         ========
         Conectar cliente a um banco de dados qualquer
@@ -49,9 +48,9 @@ class Bank{
        =======
 
     */
-        bool add(Archivable*);
-        bool up(Archivable*);
-        bool find(Archivable*);
-        bool erase(Archivable*);
+        bool add(Achievable*);
+        bool up(Achievable*);
+        bool find(Achievable*);
+        bool erase(Achievable*);
      
 };

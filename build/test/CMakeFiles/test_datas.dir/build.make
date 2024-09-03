@@ -41,22 +41,22 @@ cmake_force:
 # Set environment variables for the build.
 
 # The shell in which to execute make rules.
-SHELL = /data/data/com.termux/files/usr/bin/sh
+SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /data/data/com.termux/files/usr/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/dev/Agenda
+CMAKE_SOURCE_DIR = /home/randolfo/dev/Agenda
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/data/com.termux/files/home/dev/Agenda/build
+CMAKE_BINARY_DIR = /home/randolfo/dev/Agenda/build
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/test_datas.dir/depend.make
@@ -70,18 +70,18 @@ include test/CMakeFiles/test_datas.dir/progress.make
 include test/CMakeFiles/test_datas.dir/flags.make
 
 test/CMakeFiles/test_datas.dir/test_datas.cpp.o: test/CMakeFiles/test_datas.dir/flags.make
-test/CMakeFiles/test_datas.dir/test_datas.cpp.o: /data/data/com.termux/files/home/dev/Agenda/test/test_datas.cpp
+test/CMakeFiles/test_datas.dir/test_datas.cpp.o: /home/randolfo/dev/Agenda/test/test_datas.cpp
 test/CMakeFiles/test_datas.dir/test_datas.cpp.o: test/CMakeFiles/test_datas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_datas.dir/test_datas.cpp.o"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/test && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_datas.dir/test_datas.cpp.o -MF CMakeFiles/test_datas.dir/test_datas.cpp.o.d -o CMakeFiles/test_datas.dir/test_datas.cpp.o -c /data/data/com.termux/files/home/dev/Agenda/test/test_datas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_datas.dir/test_datas.cpp.o"
+	cd /home/randolfo/dev/Agenda/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_datas.dir/test_datas.cpp.o -MF CMakeFiles/test_datas.dir/test_datas.cpp.o.d -o CMakeFiles/test_datas.dir/test_datas.cpp.o -c /home/randolfo/dev/Agenda/test/test_datas.cpp
 
 test/CMakeFiles/test_datas.dir/test_datas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_datas.dir/test_datas.cpp.i"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/test && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/dev/Agenda/test/test_datas.cpp > CMakeFiles/test_datas.dir/test_datas.cpp.i
+	cd /home/randolfo/dev/Agenda/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/dev/Agenda/test/test_datas.cpp > CMakeFiles/test_datas.dir/test_datas.cpp.i
 
 test/CMakeFiles/test_datas.dir/test_datas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_datas.dir/test_datas.cpp.s"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/test && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/dev/Agenda/test/test_datas.cpp -o CMakeFiles/test_datas.dir/test_datas.cpp.s
+	cd /home/randolfo/dev/Agenda/build/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/dev/Agenda/test/test_datas.cpp -o CMakeFiles/test_datas.dir/test_datas.cpp.s
 
 # Object files for target test_datas
 test_datas_OBJECTS = \
@@ -89,31 +89,31 @@ test_datas_OBJECTS = \
 
 # External object files for target test_datas
 test_datas_EXTERNAL_OBJECTS = \
-"/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/Contact.dir/datas/Notas.cpp.o" \
-"/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/Contact.dir/datas/Book.cpp.o" \
-"/data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/Contact.dir/datas/Contact.cpp.o"
+"/home/randolfo/dev/Agenda/build/src/CMakeFiles/Contact.dir/datas/Notas.cpp.o" \
+"/home/randolfo/dev/Agenda/build/src/CMakeFiles/Contact.dir/datas/Book.cpp.o" \
+"/home/randolfo/dev/Agenda/build/src/CMakeFiles/Contact.dir/datas/Contact.cpp.o"
 
 test/test_datas: test/CMakeFiles/test_datas.dir/test_datas.cpp.o
 test/test_datas: src/CMakeFiles/Contact.dir/datas/Notas.cpp.o
 test/test_datas: src/CMakeFiles/Contact.dir/datas/Book.cpp.o
 test/test_datas: src/CMakeFiles/Contact.dir/datas/Contact.cpp.o
 test/test_datas: test/CMakeFiles/test_datas.dir/build.make
-test/test_datas: /data/data/com.termux/files/usr/lib/libgtest_main.so
-test/test_datas: /data/data/com.termux/files/usr/lib/libgtest.so
+test/test_datas: /usr/lib/libgtest_main.so.1.15.2
+test/test_datas: /usr/lib/libgtest.so.1.15.2
 test/test_datas: test/CMakeFiles/test_datas.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_datas"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_datas.dir/link.txt --verbose=$(VERBOSE)
-	cd /data/data/com.termux/files/home/dev/Agenda/build/test && /data/data/com.termux/files/usr/bin/cmake -D TEST_TARGET=test_datas -D TEST_EXECUTABLE=/data/data/com.termux/files/home/dev/Agenda/build/test/test_datas -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/data/data/com.termux/files/home/dev/Agenda/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_datas_TESTS -D CTEST_FILE=/data/data/com.termux/files/home/dev/Agenda/build/test/test_datas[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /data/data/com.termux/files/usr/share/cmake-3.30/Modules/GoogleTestAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_datas"
+	cd /home/randolfo/dev/Agenda/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_datas.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/randolfo/dev/Agenda/build/test && /usr/bin/cmake -D TEST_TARGET=test_datas -D TEST_EXECUTABLE=/home/randolfo/dev/Agenda/build/test/test_datas -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/randolfo/dev/Agenda/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_datas_TESTS -D CTEST_FILE=/home/randolfo/dev/Agenda/build/test/test_datas[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/test_datas.dir/build: test/test_datas
 .PHONY : test/CMakeFiles/test_datas.dir/build
 
 test/CMakeFiles/test_datas.dir/clean:
-	cd /data/data/com.termux/files/home/dev/Agenda/build/test && $(CMAKE_COMMAND) -P CMakeFiles/test_datas.dir/cmake_clean.cmake
+	cd /home/randolfo/dev/Agenda/build/test && $(CMAKE_COMMAND) -P CMakeFiles/test_datas.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/test_datas.dir/clean
 
 test/CMakeFiles/test_datas.dir/depend:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/data/com.termux/files/home/dev/Agenda /data/data/com.termux/files/home/dev/Agenda/test /data/data/com.termux/files/home/dev/Agenda/build /data/data/com.termux/files/home/dev/Agenda/build/test /data/data/com.termux/files/home/dev/Agenda/build/test/CMakeFiles/test_datas.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/randolfo/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/randolfo/dev/Agenda /home/randolfo/dev/Agenda/test /home/randolfo/dev/Agenda/build /home/randolfo/dev/Agenda/build/test /home/randolfo/dev/Agenda/build/test/CMakeFiles/test_datas.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/CMakeFiles/test_datas.dir/depend
 

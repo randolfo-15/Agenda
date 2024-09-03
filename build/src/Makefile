@@ -45,22 +45,22 @@ cmake_force:
 # Set environment variables for the build.
 
 # The shell in which to execute make rules.
-SHELL = /data/data/com.termux/files/usr/bin/sh
+SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /data/data/com.termux/files/usr/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/dev/Agenda
+CMAKE_SOURCE_DIR = /home/randolfo/dev/Agenda
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/data/com.termux/files/home/dev/Agenda/build
+CMAKE_BINARY_DIR = /home/randolfo/dev/Agenda/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /data/data/com.termux/files/home/dev/Agenda/build
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/data/data/com.termux/files/usr/bin/ctest --force-new-ctest-process $(ARGS)
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/data/data/com.termux/files/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/data/data/com.termux/files/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles /data/data/com.termux/files/home/dev/Agenda/build/src//CMakeFiles/progress.marks
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles 0
+	cd /home/randolfo/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles /home/randolfo/dev/Agenda/build/src//CMakeFiles/progress.marks
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/randolfo/dev/Agenda/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/Contact.dir/rule:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Contact.dir/rule
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Contact.dir/rule
 .PHONY : src/CMakeFiles/Contact.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ Contact: src/CMakeFiles/Contact.dir/rule
 
 # fast build rule for target.
 Contact/fast:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/build
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/build
 .PHONY : Contact/fast
 
 # Convenience name for target.
 src/CMakeFiles/Bank.dir/rule:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Bank.dir/rule
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Bank.dir/rule
 .PHONY : src/CMakeFiles/Bank.dir/rule
 
 # Convenience name for target.
@@ -151,7 +151,7 @@ Bank: src/CMakeFiles/Bank.dir/rule
 
 # fast build rule for target.
 Bank/fast:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/build
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/build
 .PHONY : Bank/fast
 
 datas/Book.o: datas/Book.cpp.o
@@ -159,7 +159,7 @@ datas/Book.o: datas/Book.cpp.o
 
 # target to build an object file
 datas/Book.cpp.o:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.o
 .PHONY : datas/Book.cpp.o
 
 datas/Book.i: datas/Book.cpp.i
@@ -167,7 +167,7 @@ datas/Book.i: datas/Book.cpp.i
 
 # target to preprocess a source file
 datas/Book.cpp.i:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.i
 .PHONY : datas/Book.cpp.i
 
 datas/Book.s: datas/Book.cpp.s
@@ -175,7 +175,7 @@ datas/Book.s: datas/Book.cpp.s
 
 # target to generate assembly for a file
 datas/Book.cpp.s:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.s
 .PHONY : datas/Book.cpp.s
 
 datas/Contact.o: datas/Contact.cpp.o
@@ -183,7 +183,7 @@ datas/Contact.o: datas/Contact.cpp.o
 
 # target to build an object file
 datas/Contact.cpp.o:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.o
 .PHONY : datas/Contact.cpp.o
 
 datas/Contact.i: datas/Contact.cpp.i
@@ -191,7 +191,7 @@ datas/Contact.i: datas/Contact.cpp.i
 
 # target to preprocess a source file
 datas/Contact.cpp.i:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.i
 .PHONY : datas/Contact.cpp.i
 
 datas/Contact.s: datas/Contact.cpp.s
@@ -199,7 +199,7 @@ datas/Contact.s: datas/Contact.cpp.s
 
 # target to generate assembly for a file
 datas/Contact.cpp.s:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.s
 .PHONY : datas/Contact.cpp.s
 
 datas/Notas.o: datas/Notas.cpp.o
@@ -207,7 +207,7 @@ datas/Notas.o: datas/Notas.cpp.o
 
 # target to build an object file
 datas/Notas.cpp.o:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.o
 .PHONY : datas/Notas.cpp.o
 
 datas/Notas.i: datas/Notas.cpp.i
@@ -215,7 +215,7 @@ datas/Notas.i: datas/Notas.cpp.i
 
 # target to preprocess a source file
 datas/Notas.cpp.i:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.i
 .PHONY : datas/Notas.cpp.i
 
 datas/Notas.s: datas/Notas.cpp.s
@@ -223,15 +223,39 @@ datas/Notas.s: datas/Notas.cpp.s
 
 # target to generate assembly for a file
 datas/Notas.cpp.s:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.s
 .PHONY : datas/Notas.cpp.s
+
+db/arq.o: db/arq.cpp.o
+.PHONY : db/arq.o
+
+# target to build an object file
+db/arq.cpp.o:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/arq.cpp.o
+.PHONY : db/arq.cpp.o
+
+db/arq.i: db/arq.cpp.i
+.PHONY : db/arq.i
+
+# target to preprocess a source file
+db/arq.cpp.i:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/arq.cpp.i
+.PHONY : db/arq.cpp.i
+
+db/arq.s: db/arq.cpp.s
+.PHONY : db/arq.s
+
+# target to generate assembly for a file
+db/arq.cpp.s:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/arq.cpp.s
+.PHONY : db/arq.cpp.s
 
 db/bank.o: db/bank.cpp.o
 .PHONY : db/bank.o
 
 # target to build an object file
 db/bank.cpp.o:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.o
 .PHONY : db/bank.cpp.o
 
 db/bank.i: db/bank.cpp.i
@@ -239,7 +263,7 @@ db/bank.i: db/bank.cpp.i
 
 # target to preprocess a source file
 db/bank.cpp.i:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.i
 .PHONY : db/bank.cpp.i
 
 db/bank.s: db/bank.cpp.s
@@ -247,7 +271,7 @@ db/bank.s: db/bank.cpp.s
 
 # target to generate assembly for a file
 db/bank.cpp.s:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.s
 .PHONY : db/bank.cpp.s
 
 # Help Target
@@ -270,6 +294,9 @@ help:
 	@echo "... datas/Notas.o"
 	@echo "... datas/Notas.i"
 	@echo "... datas/Notas.s"
+	@echo "... db/arq.o"
+	@echo "... db/arq.i"
+	@echo "... db/arq.s"
 	@echo "... db/bank.o"
 	@echo "... db/bank.i"
 	@echo "... db/bank.s"
@@ -284,6 +311,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/randolfo/dev/Agenda/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

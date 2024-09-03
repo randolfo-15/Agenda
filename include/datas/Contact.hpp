@@ -8,8 +8,9 @@
  */
 
 #include "Book.hpp"
+#include "db/arq.hpp"
 
-class Contact{
+class Contact: public Achievable{
     // Fields
     // ======
     std::string 
@@ -42,4 +43,8 @@ class Contact{
         std::string e_mail();
         Book notes();
         int key();
+
+    // Achievable:
+    bool insert(PGconn*) override;
+    
 };

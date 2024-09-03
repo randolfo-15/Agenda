@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/data/data/com.termux/files/home/dev/Agenda/test/test_datas.cpp" "test/CMakeFiles/test_datas.dir/test_datas.cpp.o" "gcc" "test/CMakeFiles/test_datas.dir/test_datas.cpp.o.d"
+  "/home/randolfo/dev/Agenda/test/test_datas.cpp" "test/CMakeFiles/test_datas.dir/test_datas.cpp.o" "gcc" "test/CMakeFiles/test_datas.dir/test_datas.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

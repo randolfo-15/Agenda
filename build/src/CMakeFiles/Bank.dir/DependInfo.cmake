@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/data/data/com.termux/files/home/dev/Agenda/src/db/bank.cpp" "src/CMakeFiles/Bank.dir/db/bank.cpp.o" "gcc" "src/CMakeFiles/Bank.dir/db/bank.cpp.o.d"
+  "/home/randolfo/dev/Agenda/src/db/arq.cpp" "src/CMakeFiles/Bank.dir/db/arq.cpp.o" "gcc" "src/CMakeFiles/Bank.dir/db/arq.cpp.o.d"
+  "/home/randolfo/dev/Agenda/src/db/bank.cpp" "src/CMakeFiles/Bank.dir/db/bank.cpp.o" "gcc" "src/CMakeFiles/Bank.dir/db/bank.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

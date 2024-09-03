@@ -21,6 +21,7 @@ add_library(Bank OBJECT)
 target_sources(Bank
     PRIVATE
         db/bank.cpp
+        db/arq.cpp
 )
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpqxx -lpq")

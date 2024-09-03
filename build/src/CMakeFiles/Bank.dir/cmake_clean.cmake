@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Bank.dir/db/arq.cpp.o"
+  "CMakeFiles/Bank.dir/db/arq.cpp.o.d"
   "CMakeFiles/Bank.dir/db/bank.cpp.o"
   "CMakeFiles/Bank.dir/db/bank.cpp.o.d"
 )

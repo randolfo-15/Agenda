@@ -50,3 +50,8 @@ str Contact::last_name(){
 str Contact::telephone(){ return phone; }  
 str Contact::e_mail(){ return email; }
 Book Contact::notes(){ return book; }
+
+// Achievable
+// ==========
+
+bool Contact::insert(PGconn* conn){ return true; }

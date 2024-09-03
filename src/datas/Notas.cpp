@@ -1,4 +1,9 @@
+#include "db/sql.hpp"
+#include <charconv>
 #include <datas/Notes.hpp>
+#include <libpq-fe.h>
+#include <string>
+
 
 using str=std::string;
 using List=std::initializer_list<str>;
@@ -38,4 +43,21 @@ bool Notes::tag_erase(str flag){
     if(( i= tag_exist(flag)) >=0) tag.erase(tag.begin()+i); 
     
     return (i>=0);
+}
+
+bool Notes::insert(PGconn* conn){
+    str tags = "";
+    for (auto tg:tag) tags+=tg+" ";
+
+    const char *param[]{
+        text.c_str(),
+        tags.c_str(),
+        "0"  
+    };
+
+    PGresult* res = exec(conn,db::INSERT_NOTE.c_str(),3,param);
+    bool status = (PQresultStatus(res) == PGRES_COMMAND_OK);
+    PQclear(res);
+    return status;
+    
 }

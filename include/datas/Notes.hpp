@@ -8,14 +8,18 @@
  * \since  : 1.0
  */
 
+#include "db/arq.hpp"
 #include <initializer_list>
+#include <libpq-fe.h>
 #include <string>
 #include <vector>
 
-class Notes{
+class Notes: public Achievable{
 
     std::string text = "";
     std::vector<std::string> tag;
+    
+    int id = 0;
     
     public:
         // Build
@@ -66,5 +70,7 @@ class Notes{
         
         */
         bool tag_erase(std::string);
+
+        bool insert(PGconn*) override;
 };
 

@@ -41,22 +41,22 @@ cmake_force:
 # Set environment variables for the build.
 
 # The shell in which to execute make rules.
-SHELL = /data/data/com.termux/files/usr/bin/sh
+SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /data/data/com.termux/files/usr/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/dev/Agenda
+CMAKE_SOURCE_DIR = /home/randolfo/dev/Agenda
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/data/com.termux/files/home/dev/Agenda/build
+CMAKE_BINARY_DIR = /home/randolfo/dev/Agenda/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/Contact.dir/depend.make
@@ -70,46 +70,46 @@ include src/CMakeFiles/Contact.dir/progress.make
 include src/CMakeFiles/Contact.dir/flags.make
 
 src/CMakeFiles/Contact.dir/datas/Notas.cpp.o: src/CMakeFiles/Contact.dir/flags.make
-src/CMakeFiles/Contact.dir/datas/Notas.cpp.o: /data/data/com.termux/files/home/dev/Agenda/src/datas/Notas.cpp
+src/CMakeFiles/Contact.dir/datas/Notas.cpp.o: /home/randolfo/dev/Agenda/src/datas/Notas.cpp
 src/CMakeFiles/Contact.dir/datas/Notas.cpp.o: src/CMakeFiles/Contact.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Contact.dir/datas/Notas.cpp.o"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Contact.dir/datas/Notas.cpp.o -MF CMakeFiles/Contact.dir/datas/Notas.cpp.o.d -o CMakeFiles/Contact.dir/datas/Notas.cpp.o -c /data/data/com.termux/files/home/dev/Agenda/src/datas/Notas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Contact.dir/datas/Notas.cpp.o"
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Contact.dir/datas/Notas.cpp.o -MF CMakeFiles/Contact.dir/datas/Notas.cpp.o.d -o CMakeFiles/Contact.dir/datas/Notas.cpp.o -c /home/randolfo/dev/Agenda/src/datas/Notas.cpp
 
 src/CMakeFiles/Contact.dir/datas/Notas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Contact.dir/datas/Notas.cpp.i"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/dev/Agenda/src/datas/Notas.cpp > CMakeFiles/Contact.dir/datas/Notas.cpp.i
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/dev/Agenda/src/datas/Notas.cpp > CMakeFiles/Contact.dir/datas/Notas.cpp.i
 
 src/CMakeFiles/Contact.dir/datas/Notas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Contact.dir/datas/Notas.cpp.s"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/dev/Agenda/src/datas/Notas.cpp -o CMakeFiles/Contact.dir/datas/Notas.cpp.s
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/dev/Agenda/src/datas/Notas.cpp -o CMakeFiles/Contact.dir/datas/Notas.cpp.s
 
 src/CMakeFiles/Contact.dir/datas/Book.cpp.o: src/CMakeFiles/Contact.dir/flags.make
-src/CMakeFiles/Contact.dir/datas/Book.cpp.o: /data/data/com.termux/files/home/dev/Agenda/src/datas/Book.cpp
+src/CMakeFiles/Contact.dir/datas/Book.cpp.o: /home/randolfo/dev/Agenda/src/datas/Book.cpp
 src/CMakeFiles/Contact.dir/datas/Book.cpp.o: src/CMakeFiles/Contact.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Contact.dir/datas/Book.cpp.o"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Contact.dir/datas/Book.cpp.o -MF CMakeFiles/Contact.dir/datas/Book.cpp.o.d -o CMakeFiles/Contact.dir/datas/Book.cpp.o -c /data/data/com.termux/files/home/dev/Agenda/src/datas/Book.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Contact.dir/datas/Book.cpp.o"
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Contact.dir/datas/Book.cpp.o -MF CMakeFiles/Contact.dir/datas/Book.cpp.o.d -o CMakeFiles/Contact.dir/datas/Book.cpp.o -c /home/randolfo/dev/Agenda/src/datas/Book.cpp
 
 src/CMakeFiles/Contact.dir/datas/Book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Contact.dir/datas/Book.cpp.i"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/dev/Agenda/src/datas/Book.cpp > CMakeFiles/Contact.dir/datas/Book.cpp.i
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/dev/Agenda/src/datas/Book.cpp > CMakeFiles/Contact.dir/datas/Book.cpp.i
 
 src/CMakeFiles/Contact.dir/datas/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Contact.dir/datas/Book.cpp.s"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/dev/Agenda/src/datas/Book.cpp -o CMakeFiles/Contact.dir/datas/Book.cpp.s
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/dev/Agenda/src/datas/Book.cpp -o CMakeFiles/Contact.dir/datas/Book.cpp.s
 
 src/CMakeFiles/Contact.dir/datas/Contact.cpp.o: src/CMakeFiles/Contact.dir/flags.make
-src/CMakeFiles/Contact.dir/datas/Contact.cpp.o: /data/data/com.termux/files/home/dev/Agenda/src/datas/Contact.cpp
+src/CMakeFiles/Contact.dir/datas/Contact.cpp.o: /home/randolfo/dev/Agenda/src/datas/Contact.cpp
 src/CMakeFiles/Contact.dir/datas/Contact.cpp.o: src/CMakeFiles/Contact.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Contact.dir/datas/Contact.cpp.o"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Contact.dir/datas/Contact.cpp.o -MF CMakeFiles/Contact.dir/datas/Contact.cpp.o.d -o CMakeFiles/Contact.dir/datas/Contact.cpp.o -c /data/data/com.termux/files/home/dev/Agenda/src/datas/Contact.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Contact.dir/datas/Contact.cpp.o"
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/Contact.dir/datas/Contact.cpp.o -MF CMakeFiles/Contact.dir/datas/Contact.cpp.o.d -o CMakeFiles/Contact.dir/datas/Contact.cpp.o -c /home/randolfo/dev/Agenda/src/datas/Contact.cpp
 
 src/CMakeFiles/Contact.dir/datas/Contact.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Contact.dir/datas/Contact.cpp.i"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/dev/Agenda/src/datas/Contact.cpp > CMakeFiles/Contact.dir/datas/Contact.cpp.i
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/dev/Agenda/src/datas/Contact.cpp > CMakeFiles/Contact.dir/datas/Contact.cpp.i
 
 src/CMakeFiles/Contact.dir/datas/Contact.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Contact.dir/datas/Contact.cpp.s"
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/dev/Agenda/src/datas/Contact.cpp -o CMakeFiles/Contact.dir/datas/Contact.cpp.s
+	cd /home/randolfo/dev/Agenda/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/dev/Agenda/src/datas/Contact.cpp -o CMakeFiles/Contact.dir/datas/Contact.cpp.s
 
 Contact: src/CMakeFiles/Contact.dir/datas/Notas.cpp.o
 Contact: src/CMakeFiles/Contact.dir/datas/Book.cpp.o
@@ -122,10 +122,10 @@ src/CMakeFiles/Contact.dir/build: Contact
 .PHONY : src/CMakeFiles/Contact.dir/build
 
 src/CMakeFiles/Contact.dir/clean:
-	cd /data/data/com.termux/files/home/dev/Agenda/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Contact.dir/cmake_clean.cmake
+	cd /home/randolfo/dev/Agenda/build/src && $(CMAKE_COMMAND) -P CMakeFiles/Contact.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/Contact.dir/clean
 
 src/CMakeFiles/Contact.dir/depend:
-	cd /data/data/com.termux/files/home/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/data/com.termux/files/home/dev/Agenda /data/data/com.termux/files/home/dev/Agenda/src /data/data/com.termux/files/home/dev/Agenda/build /data/data/com.termux/files/home/dev/Agenda/build/src /data/data/com.termux/files/home/dev/Agenda/build/src/CMakeFiles/Contact.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/randolfo/dev/Agenda/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/randolfo/dev/Agenda /home/randolfo/dev/Agenda/src /home/randolfo/dev/Agenda/build /home/randolfo/dev/Agenda/build/src /home/randolfo/dev/Agenda/build/src/CMakeFiles/Contact.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/Contact.dir/depend
 

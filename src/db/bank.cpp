@@ -2,7 +2,7 @@
 
 using str=std::string;
 using namespace db;
-using Arc=Archivable;
+using Arq=Achievable;
 
 
 bool Bank::connect(str str_conn){
@@ -20,8 +20,12 @@ str Bank::log(){
     return PQerrorMessage(conn);
 }
 
-bool Bank::add(Arc* arc){ return arc->insert(conn); } 
-bool Bank::up(Arc* arc){ return arc->insert(conn); } 
-bool Bank::find(Arc* arc){ return arc->insert(conn); } 
-bool Bank::erase(Arc* arc){ return arc->insert(conn); } 
+Bank::Bank(){}
+Bank::~Bank(){ disconnect(); }
+
+
+bool Bank::add(Arq* Arq){ return Arq->insert(conn); } 
+bool Bank::up(Arq* Arq){ return false; } 
+bool Bank::find(Arq* Arq){ return  false; } 
+bool Bank::erase(Arq* Arq){ return false; } 
 

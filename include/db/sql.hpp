@@ -32,6 +32,11 @@ PASS = "agenda",
         // ========
         TB_ADDRESS="address",
         TB_CONTACT="contact",
-        TB_NOTES="notes";
+        TB_NOTES="notes",
+
+        // DMLs
+        // ====
+
+        INSERT_NOTE="INSERT INTO "+TB_NOTES+" (body,tag,owner) VALUES ($1 , $2 , $3);";
 
  };
