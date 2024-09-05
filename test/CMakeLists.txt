@@ -1,32 +1,30 @@
 find_package(GTest)
 
 # --------------------------- Datas ---------------------------
-add_executable( test_datas
-    test_datas.cpp
-)
+add_executable( test_Cnt test_datas.cpp)
 
-target_link_libraries(
-    test_datas
+target_link_libraries( test_Cnt
     PRIVATE
     GTest::gtest_main
-    Contact
+    Cnt
 )
+
 # -------------------------- Bank -------------------------------
-add_executable( test_bank
+add_executable( test_Bnk
     test_db.cpp
 )
 
 target_link_libraries(
-    test_bank
+    test_Bnk
     PRIVATE
     GTest::gtest_main
-    Bank
+    Bnk
 )
 # -------------------------- Add Test ----------------------------
 include(GoogleTest)
-gtest_discover_tests(test_datas)
-gtest_discover_tests(test_bank )
+gtest_discover_tests(test_Cnt)
+gtest_discover_tests(test_Bnk )
 
-add_test(NAME Bank  COMMAND test_bank)
-add_test(NAME Datas COMMAND test_datas)
+add_test(NAME Test_Bnk COMMAND test_Bnk)
+add_test(NAME Test_Cnt COMMAND test_Cnt)
 

@@ -6,9 +6,9 @@
  * \since  : 1.0
  */
 
-#include <db/bank.hpp>
+#include <db/Bank.hpp>
 #include <gtest/gtest.h>
-#include <iostream>
+
 
 TEST(Bank,connect){ EXPECT_EQ(Bank().connect(), true); }
 

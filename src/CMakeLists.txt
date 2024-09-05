@@ -1,39 +1,38 @@
-# --------------------------- Datas ---------------------------
-add_library(Contact OBJECT )
+# ----------------- Achievable -----------------
 
-target_sources(Contact
-    PRIVATE
-        datas/Notas.cpp 
-        datas/Book.cpp 
-        datas/Contact.cpp 
-)
+add_library(Ach OBJECT ${SOURCE_DIR}/db/Arq.cpp)
 
-target_include_directories(Contact 
-    PUBLIC 
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/datas>
-    # $<INSTALL_INTERFACE:include>
-)
+target_include_directories(Ach PUBLIC ${INCLUDE_DIR}/db)
 
-# -------------------------- Bank -------------------------------
+target_link_libraries(Ach PRIVATE pq)
 
-add_library(Bank OBJECT)
+# ------------------ Contact -------------------
 
-target_sources(Bank
-    PRIVATE
-        db/bank.cpp
-        db/arq.cpp
-)
+add_library(Cnt OBJECT)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpqxx -lpq")
-
-target_link_libraries(Bank
+target_sources(Cnt 
     PRIVATE 
-        pq
+        ${SOURCE_DIR}/db/Arq.cpp
+        ${SOURCE_DIR}/datas/Notas.cpp
+        ${SOURCE_DIR}/datas/Book.cpp
+        ${SOURCE_DIR}/datas/Contact.cpp
 )
 
-target_include_directories(Bank
-    PUBLIC 
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/db>
-    # $<INSTALL_INTERFACE:include>
+target_include_directories( Cnt PUBLIC ${INCLUDE_DIR}/datas )
+
+target_link_libraries(Cnt PRIVATE Ach)
+
+# ------------------- Bank ---------------------
+
+add_library(Bnk OBJECT)
+
+target_sources(Bnk 
+    PRIVATE 
+        ${SOURCE_DIR}/db/Arq.cpp
+        ${SOURCE_DIR}/db/Bank.cpp
 )
+
+target_include_directories( Bnk PUBLIC ${INCLUDE_DIR}/db )
+
+target_link_libraries(Bnk PRIVATE Ach)
 

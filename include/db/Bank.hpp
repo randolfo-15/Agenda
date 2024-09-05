@@ -8,7 +8,8 @@
  * \since  : 1.0
 */
 
-#include "arq.hpp"
+#include "Arq.hpp"
+#include "Sql.hpp"
 
 class Bank{
     PGconn* conn = nullptr;

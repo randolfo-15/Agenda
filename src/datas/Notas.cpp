@@ -1,8 +1,4 @@
-#include "db/sql.hpp"
-#include <charconv>
 #include <datas/Notes.hpp>
-#include <libpq-fe.h>
-#include <string>
 
 
 using str=std::string;
@@ -15,10 +11,7 @@ Notes::Notes(List tags):Notes("",tags){}
 
 Notes::Notes(str text):Notes(text,{}){}
 
-Notes::Notes(str reminder,List tags):
-    text(reminder),
-    tag(tags)
-{}
+Notes::Notes(str reminder,List tags):text(reminder),tag(tags){}
 
 // Setting
 // =======
@@ -45,6 +38,7 @@ bool Notes::tag_erase(str flag){
     return (i>=0);
 }
 
+
 bool Notes::insert(PGconn* conn){
     str tags = "";
     for (auto tg:tag) tags+=tg+" ";
@@ -55,9 +49,5 @@ bool Notes::insert(PGconn* conn){
         "0"  
     };
 
-    PGresult* res = exec(conn,db::INSERT_NOTE.c_str(),3,param);
-    bool status = (PQresultStatus(res) == PGRES_COMMAND_OK);
-    PQclear(res);
-    return status;
-    
+    return true;
 }

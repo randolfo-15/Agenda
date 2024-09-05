@@ -1,4 +1,4 @@
-#include <db/bank.hpp>
+#include <db/Bank.hpp>
 
 using str=std::string;
 using namespace db;
@@ -24,8 +24,8 @@ Bank::Bank(){}
 Bank::~Bank(){ disconnect(); }
 
 
-bool Bank::add(Arq* Arq){ return Arq->insert(conn); } 
-bool Bank::up(Arq* Arq){ return false; } 
-bool Bank::find(Arq* Arq){ return  false; } 
-bool Bank::erase(Arq* Arq){ return false; } 
+bool Bank::add(Arq* arq){ return arq->insert(conn); } 
+bool Bank::up(Arq* arq){ return false; } 
+bool Bank::find(Arq* arq){ return  false; } 
+bool Bank::erase(Arq* arq){ return false; } 
 

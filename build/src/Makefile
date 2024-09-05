@@ -127,39 +127,53 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/Contact.dir/rule:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Contact.dir/rule
-.PHONY : src/CMakeFiles/Contact.dir/rule
+src/CMakeFiles/Ach.dir/rule:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Ach.dir/rule
+.PHONY : src/CMakeFiles/Ach.dir/rule
 
 # Convenience name for target.
-Contact: src/CMakeFiles/Contact.dir/rule
-.PHONY : Contact
+Ach: src/CMakeFiles/Ach.dir/rule
+.PHONY : Ach
 
 # fast build rule for target.
-Contact/fast:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/build
-.PHONY : Contact/fast
+Ach/fast:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/build
+.PHONY : Ach/fast
 
 # Convenience name for target.
-src/CMakeFiles/Bank.dir/rule:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Bank.dir/rule
-.PHONY : src/CMakeFiles/Bank.dir/rule
+src/CMakeFiles/Cnt.dir/rule:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Cnt.dir/rule
+.PHONY : src/CMakeFiles/Cnt.dir/rule
 
 # Convenience name for target.
-Bank: src/CMakeFiles/Bank.dir/rule
-.PHONY : Bank
+Cnt: src/CMakeFiles/Cnt.dir/rule
+.PHONY : Cnt
 
 # fast build rule for target.
-Bank/fast:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/build
-.PHONY : Bank/fast
+Cnt/fast:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/build
+.PHONY : Cnt/fast
+
+# Convenience name for target.
+src/CMakeFiles/Bnk.dir/rule:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Bnk.dir/rule
+.PHONY : src/CMakeFiles/Bnk.dir/rule
+
+# Convenience name for target.
+Bnk: src/CMakeFiles/Bnk.dir/rule
+.PHONY : Bnk
+
+# fast build rule for target.
+Bnk/fast:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/build
+.PHONY : Bnk/fast
 
 datas/Book.o: datas/Book.cpp.o
 .PHONY : datas/Book.o
 
 # target to build an object file
 datas/Book.cpp.o:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Book.cpp.o
 .PHONY : datas/Book.cpp.o
 
 datas/Book.i: datas/Book.cpp.i
@@ -167,7 +181,7 @@ datas/Book.i: datas/Book.cpp.i
 
 # target to preprocess a source file
 datas/Book.cpp.i:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Book.cpp.i
 .PHONY : datas/Book.cpp.i
 
 datas/Book.s: datas/Book.cpp.s
@@ -175,7 +189,7 @@ datas/Book.s: datas/Book.cpp.s
 
 # target to generate assembly for a file
 datas/Book.cpp.s:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Book.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Book.cpp.s
 .PHONY : datas/Book.cpp.s
 
 datas/Contact.o: datas/Contact.cpp.o
@@ -183,7 +197,7 @@ datas/Contact.o: datas/Contact.cpp.o
 
 # target to build an object file
 datas/Contact.cpp.o:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Contact.cpp.o
 .PHONY : datas/Contact.cpp.o
 
 datas/Contact.i: datas/Contact.cpp.i
@@ -191,7 +205,7 @@ datas/Contact.i: datas/Contact.cpp.i
 
 # target to preprocess a source file
 datas/Contact.cpp.i:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Contact.cpp.i
 .PHONY : datas/Contact.cpp.i
 
 datas/Contact.s: datas/Contact.cpp.s
@@ -199,7 +213,7 @@ datas/Contact.s: datas/Contact.cpp.s
 
 # target to generate assembly for a file
 datas/Contact.cpp.s:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Contact.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Contact.cpp.s
 .PHONY : datas/Contact.cpp.s
 
 datas/Notas.o: datas/Notas.cpp.o
@@ -207,7 +221,7 @@ datas/Notas.o: datas/Notas.cpp.o
 
 # target to build an object file
 datas/Notas.cpp.o:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Notas.cpp.o
 .PHONY : datas/Notas.cpp.o
 
 datas/Notas.i: datas/Notas.cpp.i
@@ -215,7 +229,7 @@ datas/Notas.i: datas/Notas.cpp.i
 
 # target to preprocess a source file
 datas/Notas.cpp.i:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Notas.cpp.i
 .PHONY : datas/Notas.cpp.i
 
 datas/Notas.s: datas/Notas.cpp.s
@@ -223,56 +237,62 @@ datas/Notas.s: datas/Notas.cpp.s
 
 # target to generate assembly for a file
 datas/Notas.cpp.s:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/datas/Notas.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/datas/Notas.cpp.s
 .PHONY : datas/Notas.cpp.s
 
-db/arq.o: db/arq.cpp.o
-.PHONY : db/arq.o
+db/Arq.o: db/Arq.cpp.o
+.PHONY : db/Arq.o
 
 # target to build an object file
-db/arq.cpp.o:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/arq.cpp.o
-.PHONY : db/arq.cpp.o
+db/Arq.cpp.o:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/db/Arq.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/db/Arq.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Arq.cpp.o
+.PHONY : db/Arq.cpp.o
 
-db/arq.i: db/arq.cpp.i
-.PHONY : db/arq.i
+db/Arq.i: db/Arq.cpp.i
+.PHONY : db/Arq.i
 
 # target to preprocess a source file
-db/arq.cpp.i:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/arq.cpp.i
-.PHONY : db/arq.cpp.i
+db/Arq.cpp.i:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/db/Arq.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/db/Arq.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Arq.cpp.i
+.PHONY : db/Arq.cpp.i
 
-db/arq.s: db/arq.cpp.s
-.PHONY : db/arq.s
+db/Arq.s: db/Arq.cpp.s
+.PHONY : db/Arq.s
 
 # target to generate assembly for a file
-db/arq.cpp.s:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/arq.cpp.s
-.PHONY : db/arq.cpp.s
+db/Arq.cpp.s:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/db/Arq.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/db/Arq.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Arq.cpp.s
+.PHONY : db/Arq.cpp.s
 
-db/bank.o: db/bank.cpp.o
-.PHONY : db/bank.o
+db/Bank.o: db/Bank.cpp.o
+.PHONY : db/Bank.o
 
 # target to build an object file
-db/bank.cpp.o:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.o
-.PHONY : db/bank.cpp.o
+db/Bank.cpp.o:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Bank.cpp.o
+.PHONY : db/Bank.cpp.o
 
-db/bank.i: db/bank.cpp.i
-.PHONY : db/bank.i
+db/Bank.i: db/Bank.cpp.i
+.PHONY : db/Bank.i
 
 # target to preprocess a source file
-db/bank.cpp.i:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.i
-.PHONY : db/bank.cpp.i
+db/Bank.cpp.i:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Bank.cpp.i
+.PHONY : db/Bank.cpp.i
 
-db/bank.s: db/bank.cpp.s
-.PHONY : db/bank.s
+db/Bank.s: db/Bank.cpp.s
+.PHONY : db/Bank.s
 
 # target to generate assembly for a file
-db/bank.cpp.s:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/db/bank.cpp.s
-.PHONY : db/bank.cpp.s
+db/Bank.cpp.s:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Bank.cpp.s
+.PHONY : db/Bank.cpp.s
 
 # Help Target
 help:
@@ -283,8 +303,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... Bank"
-	@echo "... Contact"
+	@echo "... Ach"
+	@echo "... Bnk"
+	@echo "... Cnt"
 	@echo "... datas/Book.o"
 	@echo "... datas/Book.i"
 	@echo "... datas/Book.s"
@@ -294,12 +315,12 @@ help:
 	@echo "... datas/Notas.o"
 	@echo "... datas/Notas.i"
 	@echo "... datas/Notas.s"
-	@echo "... db/arq.o"
-	@echo "... db/arq.i"
-	@echo "... db/arq.s"
-	@echo "... db/bank.o"
-	@echo "... db/bank.i"
-	@echo "... db/bank.s"
+	@echo "... db/Arq.o"
+	@echo "... db/Arq.i"
+	@echo "... db/Arq.s"
+	@echo "... db/Bank.o"
+	@echo "... db/Bank.i"
+	@echo "... db/Bank.s"
 .PHONY : help
 
 

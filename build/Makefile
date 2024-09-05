@@ -127,56 +127,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Contact
+# Target rules for targets named Ach
 
 # Build rule for target.
-Contact: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Contact
-.PHONY : Contact
+Ach: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Ach
+.PHONY : Ach
 
 # fast build rule for target.
-Contact/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/build
-.PHONY : Contact/fast
+Ach/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/build
+.PHONY : Ach/fast
 
 #=============================================================================
-# Target rules for targets named Bank
+# Target rules for targets named Cnt
 
 # Build rule for target.
-Bank: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Bank
-.PHONY : Bank
+Cnt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Cnt
+.PHONY : Cnt
 
 # fast build rule for target.
-Bank/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/build
-.PHONY : Bank/fast
+Cnt/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/build
+.PHONY : Cnt/fast
 
 #=============================================================================
-# Target rules for targets named test_datas
+# Target rules for targets named Bnk
 
 # Build rule for target.
-test_datas: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_datas
-.PHONY : test_datas
+Bnk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Bnk
+.PHONY : Bnk
 
 # fast build rule for target.
-test_datas/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/build
-.PHONY : test_datas/fast
+Bnk/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/build
+.PHONY : Bnk/fast
 
 #=============================================================================
-# Target rules for targets named test_bank
+# Target rules for targets named test_Cnt
 
 # Build rule for target.
-test_bank: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_bank
-.PHONY : test_bank
+test_Cnt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_Cnt
+.PHONY : test_Cnt
 
 # fast build rule for target.
-test_bank/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/build
-.PHONY : test_bank/fast
+test_Cnt/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/build
+.PHONY : test_Cnt/fast
+
+#=============================================================================
+# Target rules for targets named test_Bnk
+
+# Build rule for target.
+test_Bnk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_Bnk
+.PHONY : test_Bnk
+
+# fast build rule for target.
+test_Bnk/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/build
+.PHONY : test_Bnk/fast
 
 # Help Target
 help:
@@ -187,10 +200,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... Bank"
-	@echo "... Contact"
-	@echo "... test_bank"
-	@echo "... test_datas"
+	@echo "... Ach"
+	@echo "... Bnk"
+	@echo "... Cnt"
+	@echo "... test_Bnk"
+	@echo "... test_Cnt"
 .PHONY : help
 
 

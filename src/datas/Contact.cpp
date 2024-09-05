@@ -54,4 +54,4 @@ Book Contact::notes(){ return book; }
 // Achievable
 // ==========
 
-bool Contact::insert(PGconn* conn){ return true; }
+

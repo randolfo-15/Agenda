@@ -81,8 +81,9 @@ clean: test/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/Contact.dir/all
-src/all: src/CMakeFiles/Bank.dir/all
+src/all: src/CMakeFiles/Ach.dir/all
+src/all: src/CMakeFiles/Cnt.dir/all
+src/all: src/CMakeFiles/Bnk.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -90,16 +91,17 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/Contact.dir/clean
-src/clean: src/CMakeFiles/Bank.dir/clean
+src/clean: src/CMakeFiles/Ach.dir/clean
+src/clean: src/CMakeFiles/Cnt.dir/clean
+src/clean: src/CMakeFiles/Bnk.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
-test/all: test/CMakeFiles/test_datas.dir/all
-test/all: test/CMakeFiles/test_bank.dir/all
+test/all: test/CMakeFiles/test_Cnt.dir/all
+test/all: test/CMakeFiles/test_Bnk.dir/all
 .PHONY : test/all
 
 # Recursive "preinstall" directory target.
@@ -107,113 +109,141 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
-test/clean: test/CMakeFiles/test_datas.dir/clean
-test/clean: test/CMakeFiles/test_bank.dir/clean
+test/clean: test/CMakeFiles/test_Cnt.dir/clean
+test/clean: test/CMakeFiles/test_Bnk.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/Contact.dir
+# Target rules for target src/CMakeFiles/Ach.dir
 
 # All Build rule for target.
-src/CMakeFiles/Contact.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=3,4,5 "Built target Contact"
-.PHONY : src/CMakeFiles/Contact.dir/all
+src/CMakeFiles/Ach.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=1 "Built target Ach"
+.PHONY : src/CMakeFiles/Ach.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/Contact.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Contact.dir/all
+src/CMakeFiles/Ach.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Ach.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/Contact.dir/rule
+.PHONY : src/CMakeFiles/Ach.dir/rule
 
 # Convenience name for target.
-Contact: src/CMakeFiles/Contact.dir/rule
-.PHONY : Contact
+Ach: src/CMakeFiles/Ach.dir/rule
+.PHONY : Ach
 
 # clean rule for target.
-src/CMakeFiles/Contact.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Contact.dir/build.make src/CMakeFiles/Contact.dir/clean
-.PHONY : src/CMakeFiles/Contact.dir/clean
+src/CMakeFiles/Ach.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/clean
+.PHONY : src/CMakeFiles/Ach.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/Bank.dir
+# Target rules for target src/CMakeFiles/Cnt.dir
 
 # All Build rule for target.
-src/CMakeFiles/Bank.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=1,2 "Built target Bank"
-.PHONY : src/CMakeFiles/Bank.dir/all
+src/CMakeFiles/Cnt.dir/all: src/CMakeFiles/Ach.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=4,5,6,7 "Built target Cnt"
+.PHONY : src/CMakeFiles/Cnt.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/Bank.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Bank.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/Bank.dir/rule
-
-# Convenience name for target.
-Bank: src/CMakeFiles/Bank.dir/rule
-.PHONY : Bank
-
-# clean rule for target.
-src/CMakeFiles/Bank.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bank.dir/build.make src/CMakeFiles/Bank.dir/clean
-.PHONY : src/CMakeFiles/Bank.dir/clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/test_datas.dir
-
-# All Build rule for target.
-test/CMakeFiles/test_datas.dir/all: src/CMakeFiles/Contact.dir/all
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=8,9 "Built target test_datas"
-.PHONY : test/CMakeFiles/test_datas.dir/all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/test_datas.dir/rule: cmake_check_build_system
+src/CMakeFiles/Cnt.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_datas.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Cnt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/test_datas.dir/rule
+.PHONY : src/CMakeFiles/Cnt.dir/rule
 
 # Convenience name for target.
-test_datas: test/CMakeFiles/test_datas.dir/rule
-.PHONY : test_datas
+Cnt: src/CMakeFiles/Cnt.dir/rule
+.PHONY : Cnt
 
 # clean rule for target.
-test/CMakeFiles/test_datas.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/clean
-.PHONY : test/CMakeFiles/test_datas.dir/clean
+src/CMakeFiles/Cnt.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/clean
+.PHONY : src/CMakeFiles/Cnt.dir/clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/test_bank.dir
+# Target rules for target src/CMakeFiles/Bnk.dir
 
 # All Build rule for target.
-test/CMakeFiles/test_bank.dir/all: src/CMakeFiles/Bank.dir/all
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=6,7 "Built target test_bank"
-.PHONY : test/CMakeFiles/test_bank.dir/all
+src/CMakeFiles/Bnk.dir/all: src/CMakeFiles/Ach.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=2,3 "Built target Bnk"
+.PHONY : src/CMakeFiles/Bnk.dir/all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/test_bank.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_bank.dir/all
+src/CMakeFiles/Bnk.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Bnk.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/test_bank.dir/rule
+.PHONY : src/CMakeFiles/Bnk.dir/rule
 
 # Convenience name for target.
-test_bank: test/CMakeFiles/test_bank.dir/rule
-.PHONY : test_bank
+Bnk: src/CMakeFiles/Bnk.dir/rule
+.PHONY : Bnk
 
 # clean rule for target.
-test/CMakeFiles/test_bank.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/clean
-.PHONY : test/CMakeFiles/test_bank.dir/clean
+src/CMakeFiles/Bnk.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/clean
+.PHONY : src/CMakeFiles/Bnk.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_Cnt.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_Cnt.dir/all: src/CMakeFiles/Ach.dir/all
+test/CMakeFiles/test_Cnt.dir/all: src/CMakeFiles/Cnt.dir/all
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=10,11 "Built target test_Cnt"
+.PHONY : test/CMakeFiles/test_Cnt.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_Cnt.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_Cnt.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_Cnt.dir/rule
+
+# Convenience name for target.
+test_Cnt: test/CMakeFiles/test_Cnt.dir/rule
+.PHONY : test_Cnt
+
+# clean rule for target.
+test/CMakeFiles/test_Cnt.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/clean
+.PHONY : test/CMakeFiles/test_Cnt.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_Bnk.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_Bnk.dir/all: src/CMakeFiles/Ach.dir/all
+test/CMakeFiles/test_Bnk.dir/all: src/CMakeFiles/Bnk.dir/all
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/randolfo/dev/Agenda/build/CMakeFiles --progress-num=8,9 "Built target test_Bnk"
+.PHONY : test/CMakeFiles/test_Bnk.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_Bnk.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_Bnk.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_Bnk.dir/rule
+
+# Convenience name for target.
+test_Bnk: test/CMakeFiles/test_Bnk.dir/rule
+.PHONY : test_Bnk
+
+# clean rule for target.
+test/CMakeFiles/test_Bnk.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/clean
+.PHONY : test/CMakeFiles/test_Bnk.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

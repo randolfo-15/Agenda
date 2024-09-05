@@ -127,39 +127,39 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/test_datas.dir/rule:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_datas.dir/rule
-.PHONY : test/CMakeFiles/test_datas.dir/rule
+test/CMakeFiles/test_Cnt.dir/rule:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_Cnt.dir/rule
+.PHONY : test/CMakeFiles/test_Cnt.dir/rule
 
 # Convenience name for target.
-test_datas: test/CMakeFiles/test_datas.dir/rule
-.PHONY : test_datas
+test_Cnt: test/CMakeFiles/test_Cnt.dir/rule
+.PHONY : test_Cnt
 
 # fast build rule for target.
-test_datas/fast:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/build
-.PHONY : test_datas/fast
+test_Cnt/fast:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/build
+.PHONY : test_Cnt/fast
 
 # Convenience name for target.
-test/CMakeFiles/test_bank.dir/rule:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_bank.dir/rule
-.PHONY : test/CMakeFiles/test_bank.dir/rule
+test/CMakeFiles/test_Bnk.dir/rule:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_Bnk.dir/rule
+.PHONY : test/CMakeFiles/test_Bnk.dir/rule
 
 # Convenience name for target.
-test_bank: test/CMakeFiles/test_bank.dir/rule
-.PHONY : test_bank
+test_Bnk: test/CMakeFiles/test_Bnk.dir/rule
+.PHONY : test_Bnk
 
 # fast build rule for target.
-test_bank/fast:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/build
-.PHONY : test_bank/fast
+test_Bnk/fast:
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/build
+.PHONY : test_Bnk/fast
 
 test_datas.o: test_datas.cpp.o
 .PHONY : test_datas.o
 
 # target to build an object file
 test_datas.cpp.o:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/test_datas.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/test_datas.cpp.o
 .PHONY : test_datas.cpp.o
 
 test_datas.i: test_datas.cpp.i
@@ -167,7 +167,7 @@ test_datas.i: test_datas.cpp.i
 
 # target to preprocess a source file
 test_datas.cpp.i:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/test_datas.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/test_datas.cpp.i
 .PHONY : test_datas.cpp.i
 
 test_datas.s: test_datas.cpp.s
@@ -175,7 +175,7 @@ test_datas.s: test_datas.cpp.s
 
 # target to generate assembly for a file
 test_datas.cpp.s:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_datas.dir/build.make test/CMakeFiles/test_datas.dir/test_datas.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Cnt.dir/build.make test/CMakeFiles/test_Cnt.dir/test_datas.cpp.s
 .PHONY : test_datas.cpp.s
 
 test_db.o: test_db.cpp.o
@@ -183,7 +183,7 @@ test_db.o: test_db.cpp.o
 
 # target to build an object file
 test_db.cpp.o:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/test_db.cpp.o
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/test_db.cpp.o
 .PHONY : test_db.cpp.o
 
 test_db.i: test_db.cpp.i
@@ -191,7 +191,7 @@ test_db.i: test_db.cpp.i
 
 # target to preprocess a source file
 test_db.cpp.i:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/test_db.cpp.i
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/test_db.cpp.i
 .PHONY : test_db.cpp.i
 
 test_db.s: test_db.cpp.s
@@ -199,7 +199,7 @@ test_db.s: test_db.cpp.s
 
 # target to generate assembly for a file
 test_db.cpp.s:
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bank.dir/build.make test/CMakeFiles/test_bank.dir/test_db.cpp.s
+	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/test_db.cpp.s
 .PHONY : test_db.cpp.s
 
 # Help Target
@@ -211,8 +211,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... test_bank"
-	@echo "... test_datas"
+	@echo "... test_Bnk"
+	@echo "... test_Cnt"
 	@echo "... test_datas.o"
 	@echo "... test_datas.i"
 	@echo "... test_datas.s"

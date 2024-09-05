@@ -8,10 +8,16 @@ project(Agenda
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+#----------------- Defines -----------------
+# Defina o diretório de fontes
+set(SOURCE_DIR "${CMAKE_SOURCE_DIR}/src")
 
+# Defina o diretório de Cabeçarios
+set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
+ 
 # ----------------- Source -----------------
-include_directories("include")
-add_subdirectory("src")
+include_directories(${INCLUDE_DIR})
+add_subdirectory(${SOURCE_DIR})
 
 
 # ------------------ Test ------------------ 

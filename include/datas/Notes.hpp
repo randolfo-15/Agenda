@@ -8,11 +8,12 @@
  * \since  : 1.0
  */
 
-#include "db/arq.hpp"
+#include <db/Arq.hpp>
+#include <db/Sql.hpp>
 #include <initializer_list>
-#include <libpq-fe.h>
 #include <string>
 #include <vector>
+
 
 class Notes: public Achievable{
 
