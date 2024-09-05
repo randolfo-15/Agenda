@@ -223,6 +223,7 @@ test/CMakeFiles/test_Cnt.dir/clean:
 
 # All Build rule for target.
 test/CMakeFiles/test_Bnk.dir/all: src/CMakeFiles/Ach.dir/all
+test/CMakeFiles/test_Bnk.dir/all: src/CMakeFiles/Cnt.dir/all
 test/CMakeFiles/test_Bnk.dir/all: src/CMakeFiles/Bnk.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_Bnk.dir/build.make test/CMakeFiles/test_Bnk.dir/build
@@ -231,7 +232,7 @@ test/CMakeFiles/test_Bnk.dir/all: src/CMakeFiles/Bnk.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_Bnk.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_Bnk.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/dev/Agenda/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_Bnk.dir/rule

@@ -1,3 +1,4 @@
+#include "Sql.hpp"
 #include <datas/Notes.hpp>
 
 
@@ -49,5 +50,5 @@ bool Notes::insert(PGconn* conn){
         "0"  
     };
 
-    return true;
+    return exec(conn,db::INSERT_NOTE.c_str(),3,param);
 }

@@ -18,6 +18,7 @@ target_link_libraries(
     test_Bnk
     PRIVATE
     GTest::gtest_main
+    Cnt
     Bnk
 )
 # -------------------------- Add Test ----------------------------

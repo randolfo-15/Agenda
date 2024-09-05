@@ -6,9 +6,18 @@
  * \since  : 1.0
  */
 
+#include <datas/Notes.hpp>
 #include <db/Bank.hpp>
 #include <gtest/gtest.h>
 
+// TEST(Bank,connect){ EXPECT_EQ(Bank().connect(), true); }
 
-TEST(Bank,connect){ EXPECT_EQ(Bank().connect(), true); }
+TEST(Bank,insert){ 
+    Bank bank;
+    Notes note;
+    note.tag_add("Aaa Bbb Ccc");
+    note.content("Letras aaaaaaa bbbbbbb ccccccc.");
+
+    bank.add(&note);
+}
 
