@@ -2,7 +2,7 @@
 
 using str=std::string;
 using namespace db;
-using Arq=Achievable;
+using Ach=Achievable;
 
 
 bool Bank::connect(str str_conn){
@@ -20,12 +20,18 @@ str Bank::log(){
     return PQerrorMessage(conn);
 }
 
-Bank::Bank(){}
+Bank::Bank() { connect();    }
+Bank::Bank(str str_conn){ connect(str_conn);}
+
 Bank::~Bank(){ disconnect(); }
 
 
-bool Bank::add(Arq* arq){ return arq->insert(conn); } 
-bool Bank::up(Arq* arq){ return false; } 
-bool Bank::find(Arq* arq){ return  false; } 
-bool Bank::erase(Arq* arq){ return false; } 
+
+bool Bank::add(Ach* Ach){ return Ach->insert(conn); } 
+
+bool Bank::up(Ach* Ach){ return false; } 
+
+bool Bank::find(Ach* Ach){ return  false; } 
+
+bool Bank::erase(str tb,str co,str value){  return Ach::remove(conn,"DELETE FROM "+tb+" WHERE "+co+" = '"+value+"';");} 
 

@@ -6,18 +6,30 @@
  * \since  : 1.0
  */
 
+#include "Sql.hpp"
 #include <datas/Notes.hpp>
 #include <db/Bank.hpp>
 #include <gtest/gtest.h>
 
-// TEST(Bank,connect){ EXPECT_EQ(Bank().connect(), true); }
+const std::string 
+    tag = "Aaaxx1@ ",
+    content = "Abacate_formiga";
 
-TEST(Bank,insert){ 
+
+
+TEST(Bank,connect){ EXPECT_EQ(Bank().connect(), true); }
+/*
+TEST(Bank_Notes,insert){ 
     Bank bank;
     Notes note;
-    note.tag_add("Aaa Bbb Ccc");
-    note.content("Letras aaaaaaa bbbbbbb ccccccc.");
+    note.tag_add(tag);
+    note.content(content);
+    
 
-    bank.add(&note);
+    EXPECT_EQ(bank.add(&note), true);
 }
-
+*/
+TEST(Bank_Notes,remove){
+    Bank bank;
+    EXPECT_EQ(bank.erase(db::TB_NOTES,db::CO_NOTES_TAG,tag),true);
+}

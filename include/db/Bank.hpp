@@ -16,6 +16,7 @@ class Bank{
     
     public:
         Bank();
+        Bank(std::string);
         ~Bank();
 
     /*! Conectar 
@@ -52,6 +53,6 @@ class Bank{
         bool add(Achievable*);
         bool up(Achievable*);
         bool find(Achievable*);
-        bool erase(Achievable*);
+        bool erase(std::string table,std::string column,std::string value);
      
 };

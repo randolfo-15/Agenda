@@ -18,8 +18,8 @@ target_link_libraries(
     test_Bnk
     PRIVATE
     GTest::gtest_main
-    Cnt
     Bnk
+    Cnt
 )
 # -------------------------- Add Test ----------------------------
 include(GoogleTest)

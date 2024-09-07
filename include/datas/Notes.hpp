@@ -20,7 +20,7 @@ class Notes: public Achievable{
     std::string text = "";
     std::vector<std::string> tag;
     
-    int id = 0;
+    int id = 2;
     
     public:
         // Build
@@ -71,7 +71,10 @@ class Notes: public Achievable{
         
         */
         bool tag_erase(std::string);
+    
+    private:
 
-        bool insert(PGconn*) override;
+        bool insert(PGconn*,bool=false) override;
+        
 };
 

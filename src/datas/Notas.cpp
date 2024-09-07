@@ -1,5 +1,6 @@
 #include "Sql.hpp"
 #include <datas/Notes.hpp>
+#include <libpq-fe.h>
 
 
 using str=std::string;
@@ -40,15 +41,20 @@ bool Notes::tag_erase(str flag){
 }
 
 
-bool Notes::insert(PGconn* conn){
+bool Notes::insert(PGconn* conn,bool status){
     str tags = "";
     for (auto tg:tag) tags+=tg+" ";
 
     const char *param[]{
         text.c_str(),
         tags.c_str(),
-        "0"  
+        "2"  
     };
 
-    return exec(conn,db::INSERT_NOTE.c_str(),3,param);
+    PGresult* res=exec(status,conn,db::INSERT_NOTE.c_str(),3,param);
+    PQclear(res);
+    return status;
 }
+
+
+

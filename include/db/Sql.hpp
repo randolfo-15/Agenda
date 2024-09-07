@@ -11,13 +11,13 @@
  #include <string>
 
 namespace  db {
-    const std::string
+    static const std::string
 
         //  Conexão
         // =========
-    NAME = "agenda",       
+        NAME = "agenda",       
         USER = "agenda",
-PASS = "agenda",
+        PASS = "agenda",
         PORT = "5432",
         HOST = "127.0.0.1",
 
@@ -30,13 +30,19 @@ PASS = "agenda",
 
         //  Tabelas
         // ========
-        TB_ADDRESS="address",
-        TB_CONTACT="contact",
-        TB_NOTES="notes",
+        TB_ADDRESS="contact.address",
+        TB_CONTACT="contact.contact",
+        TB_NOTES="contact.notes",
+
+        // Columns Note
+        // ============
+        CO_NOTES_TAG="tag",
 
         // DMLs
         // ====
 
-        INSERT_NOTE="INSERT INTO "+TB_NOTES+" (body,tag,owner) VALUES ($1 , $2 , $3);";
+        INSERT_NOTE="INSERT INTO "+TB_NOTES+" (body,tag,owner) VALUES ($1 , $2 , $3);"
+        
+        ;
 
  };

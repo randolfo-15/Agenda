@@ -246,8 +246,6 @@ db/Arq.o: db/Arq.cpp.o
 # target to build an object file
 db/Arq.cpp.o:
 	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/db/Arq.cpp.o
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/db/Arq.cpp.o
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Arq.cpp.o
 .PHONY : db/Arq.cpp.o
 
 db/Arq.i: db/Arq.cpp.i
@@ -256,8 +254,6 @@ db/Arq.i: db/Arq.cpp.i
 # target to preprocess a source file
 db/Arq.cpp.i:
 	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/db/Arq.cpp.i
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/db/Arq.cpp.i
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Arq.cpp.i
 .PHONY : db/Arq.cpp.i
 
 db/Arq.s: db/Arq.cpp.s
@@ -266,8 +262,6 @@ db/Arq.s: db/Arq.cpp.s
 # target to generate assembly for a file
 db/Arq.cpp.s:
 	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Ach.dir/build.make src/CMakeFiles/Ach.dir/db/Arq.cpp.s
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Cnt.dir/build.make src/CMakeFiles/Cnt.dir/db/Arq.cpp.s
-	cd /home/randolfo/dev/Agenda/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Bnk.dir/build.make src/CMakeFiles/Bnk.dir/db/Arq.cpp.s
 .PHONY : db/Arq.cpp.s
 
 db/Bank.o: db/Bank.cpp.o
