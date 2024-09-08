@@ -10,6 +10,7 @@
 
 #include "Arq.hpp"
 #include "Sql.hpp"
+#include <string>
 
 class Bank{
     PGconn* conn = nullptr;
@@ -52,7 +53,7 @@ class Bank{
     */
         bool add(Achievable*);
         bool up(Achievable*);
-        bool find(Achievable*);
+        bool find(std::string column,std::string value,Achievable*);
         bool erase(std::string table,std::string column,std::string value);
      
 };

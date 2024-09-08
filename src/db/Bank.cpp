@@ -1,3 +1,4 @@
+#include "Arq.hpp"
 #include <db/Bank.hpp>
 
 using str=std::string;
@@ -27,11 +28,11 @@ Bank::~Bank(){ disconnect(); }
 
 
 
-bool Bank::add(Ach* Ach){ return Ach->insert(conn); } 
+bool Bank::add(Ach* ach){ return ach->insert(conn); } 
 
-bool Bank::up(Ach* Ach){ return false; } 
+bool Bank::up(Ach* ach){ return false; } 
 
-bool Bank::find(Ach* Ach){ return  false; } 
+bool Bank::find(str col, str value ,Ach* ach){ return ach->select(conn,col,value); } 
 
-bool Bank::erase(str tb,str co,str value){  return Ach::remove(conn,"DELETE FROM "+tb+" WHERE "+co+" = '"+value+"';");} 
+bool Bank::erase(str tb,str col,str value){  return Ach::remove(conn,"DELETE FROM "+tb+" WHERE "+col+" = '"+value+"';");} 
 

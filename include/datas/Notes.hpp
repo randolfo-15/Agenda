@@ -20,7 +20,7 @@ class Notes: public Achievable{
     std::string text = "";
     std::vector<std::string> tag;
     
-    int id = 2;
+    int owner = 2;
     
     public:
         // Build
@@ -75,6 +75,6 @@ class Notes: public Achievable{
     private:
 
         bool insert(PGconn*,bool=false) override;
-        
+        bool select(PGconn*,std::string,std::string) override;
 };
 

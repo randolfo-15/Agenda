@@ -1,6 +1,7 @@
 #include "Sql.hpp"
 #include <datas/Notes.hpp>
 #include <libpq-fe.h>
+#include <sstream>
 
 
 using str=std::string;
@@ -43,7 +44,12 @@ bool Notes::tag_erase(str flag){
 
 bool Notes::insert(PGconn* conn,bool status){
     str tags = "";
-    for (auto tg:tag) tags+=tg+" ";
+    int i=0,size= tag.size();
+    while(i<size){
+        tags+=tag[i];
+        if((i+1)<size) tags+=" ";
+        ++i;
+    }
 
     const char *param[]{
         text.c_str(),
@@ -56,5 +62,17 @@ bool Notes::insert(PGconn* conn,bool status){
     return status;
 }
 
+bool Notes::select(PGconn* conn,str col, str value){
+    
+    PGresult* res =exec(conn,"SELECT * FROM "+db::TB_NOTES+" WHERE "+col+" = '"+value+"';");
+    if((PQresultStatus(res) != PGRES_TUPLES_OK)) return false;
+    text = PQgetvalue(res, 0, 1);
+    std::stringstream inf ( PQgetvalue(res, 0, 2));
+    owner = std::stoi(PQgetvalue(res, 0, 3));
+    
+    str tg="";
+    while(inf>>tg) tag.push_back(tg);
 
+    return true;
+}
 
